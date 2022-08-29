@@ -5,14 +5,14 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: musicRoute 
+        - id: movieRoute 
           uri: http://localhost:8082/
           predicates: 
-            - Path=/musics/**
-        - id: playlistRoute 
+            - Path=/movies/**
+        - id: catalogRoute 
           uri: http://localhost:8084/ 
           predicates:
-            - Path=/playlists/**
+            - Path=/catalogs/**
 eureka:
   client:
     service-url:
