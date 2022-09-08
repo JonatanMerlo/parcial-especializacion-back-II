@@ -1,7 +1,5 @@
 server:
-  port: 
-    - 8085
-    - 8086
+  port: [8085, 8086]
 
 spring:
   eureka:
