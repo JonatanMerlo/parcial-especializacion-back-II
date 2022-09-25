@@ -12,7 +12,7 @@ spring:
           filters:
             - name: CircuitBreaker
               args:
-                name: movieService
+                name: moviesService
                 fallbackUri: forward:/fallback/movies
         - id: catalogRoute 
           uri: lb://catalog-service
