@@ -10,7 +10,7 @@ spring:
           predicates: 
             - Path=/movies/**
           filters:
-            - name: CircuitBreacker
+            - name: CircuitBreaker
             args:
               name: movieService
               fallbackUri: forward:/fallback/movies
@@ -19,7 +19,7 @@ spring:
           predicates:
             - Path=/catalog/**
           filters:
-            - name: CircuitBreacker
+            - name: CircuitBreaker
             args:
               name: catalogService
               fallbackUri: forward:/fallback/catalog
